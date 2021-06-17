@@ -1,0 +1,161 @@
+@import url(reset.css);
+
+.wrapper {
+  background-color: aqua;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.wrapper__cloud {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.cloud__image1 {
+  width: 100px;
+  height: 70px;
+  animation-name: cloud-small;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.cloud__image2 {
+  display: block;
+  width: 150px;
+  height: 70px;
+  animation-name: cloud-medium;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+}
+
+.cloud__image3 {
+  width: 250px;
+  height: 100px;
+  animation-name: cloud-big;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 4s;
+}
+
+@keyframes cloud-small {
+  100% {
+    transform: translatex(1700px);
+  }
+
+  50% {
+    transform: translateX(700px);
+  }
+  0% {
+    transform: translateX(0);
+  }
+}
+@keyframes cloud-medium {
+  100% {
+    transform: translatex(1700px);
+  }
+
+  50% {
+    transform: translateX(900px);
+  }
+  0% {
+    transform: translateX(0);
+  }
+}
+@keyframes cloud-big {
+  100% {
+    transform: translatex(1700px);
+  }
+
+  50% {
+    transform: translateX(700px);
+  }
+  0% {
+    transform: translateX(0);
+  }
+}
+
+.hat__img {
+  position: absolute;
+  top: 20%;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  animation-name: hat;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  animation-direction: alternate;
+}
+
+
+
+.money__img {
+  position: absolute;
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+  top: 60%;
+  right: 0;
+  left: 30%;
+  background-color: #fff;
+  border-radius: 50%;
+  animation-name: money;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  animation-direction: alternate;
+}
+
+.house__img {
+  padding: 15px;
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  top: 60%;
+  right: 20%;
+  background-color: #fff;
+  border-radius: 50%;
+  animation-name: house;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  animation-direction: alternate;
+}
+
+@keyframes hat {
+  0% {
+    transform: translatey(50px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes money {
+  0% {
+    transform: translatey(50px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes house {
+  0% {
+    transform: translatey(50px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
